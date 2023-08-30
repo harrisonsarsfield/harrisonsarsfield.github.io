@@ -1,0 +1,682 @@
+
+
+
+/******************* setting up the spacing system used throughout *******************/
+
+
+.container-wrapper {
+        padding: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+        .container-wrapper {
+                padding: 0rem;
+        }
+}
+
+.container-wrapper.full-bleed {
+        padding: 0;
+}
+
+
+.full-bleed .col-md-8,
+.full-bleed .col-md-6,
+.full-bleed .col-md-4,
+.full-bleed .col-md-3,
+.full-bleed .col-md-9  {
+        padding: 0;
+}
+
+.element-wrapper {
+                padding: 1rem;
+        }
+
+@media only screen and (min-width: 996px) {
+        .element-wrapper {
+                padding: 1rem;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+        .element-wrapper {
+                padding: 2rem;
+        }
+}
+
+
+/******************* nav *******************/
+
+
+.navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        }
+
+@media only screen and (min-width: 996px) {
+        .navbar {
+                padding-left: 4rem;
+                padding-right: 4rem;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+        .navbar {
+                padding-left: 8rem;
+                padding-right: 8rem;
+        }
+}
+
+
+/******************* hero *******************/
+
+.hero {
+        position: relative;
+}
+
+.hero-box {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        z-index: 10;
+        color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+        .hero-box {
+                bottom: 4rem;
+                left: 4rem;
+        }
+}
+
+
+
+
+
+
+
+
+/******************* horizontal scrolly thing  *******************/
+
+.super-wide {
+        overflow-x: auto;
+}
+.card {
+        border: none;
+        border-radius: 0;
+        border-right: solid 1px #ebebeb;
+        padding: 0;
+}
+
+
+
+
+
+
+
+/******************* colours *******************/
+
+.bg-mid-grey {
+        background-color:#ccc;
+}
+.bg-light-grey {
+        background-color:#ebebeb;
+}
+.bg-dark-grey {
+        background-color:#999;
+}
+.bg-white {
+        background-color: white;
+}
+
+.bg-hunter-blue {
+        background-color: #0312C5;
+}
+
+
+.elpatio-white {
+        background-color: #EDEAD5;
+/*        color: #EDEAD5;*/
+}
+
+
+.elpatio-black {
+/*        background-color: #454445;*/
+        color: #454445;
+}
+
+
+.elpatio-red {
+        background-color: #EB5A31;
+}
+
+.white {
+        color: white;
+}
+
+
+/******************* helpers *******************/
+
+.sticky-top {
+        padding-top: 50px;
+}
+
+ul {
+        margin: 0; padding: 0;
+}
+
+
+
+/******************* ticker *******************/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+/*  position: fixed;*/
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: #F2BE26;
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  font-weight: 700;
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: #454445;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body .delimiter {
+        margin-top: 25px;
+        margin-bottom: 25px;
+}
+
+
+.block-1 {
+        display: block;
+        position: relative;
+        max-height: 100vh;
+}
+.block-1 .box-text {
+        width: 40%;
+        background: rgba(255, 255, 255, .75);
+        padding: 30px;
+}
+.block-1 .box-text-tl,
+.block-1 .box-text-tr,
+.block-1 .box-text-bl,
+.block-1 .box-text-br {z-index: 1;}
+.block-1 .box-text-tl{position: absolute; top: 0; left: 0;}
+.block-1 .box-text-tr{position: absolute; top: 0; right: 0;}
+.block-1 .box-text-bl{position: absolute; bottom: 0; left: 0;}
+.block-1 .box-text-br{position: absolute; bottom: 0; right: 0;}
+.block-1 .box-image {height: 100%; width: 100%;}
+.block-1 .box-image-right {padding-left: 10%;}
+.block-1 .box-image-left {padding-right: 10%;}
+@media screen and (max-width: 991px) {
+        .block-1 .box-text {width: 65%}
+}
+@media screen and (max-width: 767px) {
+        .block-1 h3 {font-size: x-large;}
+        .block-1 h5 {font-size: large;}
+        .block-1 .box-text {width: calc(100% - 30px); background: rgba(255, 255, 255, 1.0); box-shadow: 0 0 16px rgba(0, 0, 0, .1);}
+        .block-1 .box-text-tl,
+        .block-1 .box-text-tr,
+        .block-1 .box-text-bl,
+        .block-1 .box-text-br {position: relative; top: -15px; left: 15px;}
+        .block-1 .box-image-left {padding-right: 0;}
+        .block-1 .box-image-right {padding-left: 0;}
+}*/
+
+/* Vertical center */
+/*.v-center {
+        display: table;
+        width: 100%;
+}
+.v-center > div {
+        display: table-cell;
+        vertical-align: middle;
+        margin-top: 0;
+        margin-bottom: 0;
+        float: none;
+}
+@media (min-width: 768px) {
+        .v-center.row:before,
+        .v-center.row:after {
+                display: none;
+        }
+}
+@media (max-width: 767px) {
+        .v-center {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding-left: 5px;
+                padding-right: 5px;
+        }
+        .v-center.row {
+                display: block;
+                width: auto;
+        }
+        .v-center.row:before,
+        .row:after {
+                display: none;
+        }
+        .v-center.row > * {
+                display: block;
+                vertical-align: baseline;
+        }
+}*/
+
+/* Fullscreen background image */
+.background-cover {
+        background: url('https://images.pexels.com/photos/356286/pexels-photo-356286.jpeg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.background-cover .overlay {
+        position: absolute; top: 0; left: 0;
+        height: 100%; width: 100%;
+        background: rgba(0, 0, 0, .5);
+        z-index: 1;
+}
+.background-cover .container {
+        position: relative;
+        z-index: 2;
+}
+
+/* Fullscren background video  */
+.background-video {
+        position: relative;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+}
+
+.background-video video,
+.background-video iframe {
+        position: absolute; top: 50%; left: 50%;
+        min-width: 100%; min-height: 100%;
+        width: auto; height: auto;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 0;
+}
+.background-video .overlay {
+        position: absolute; top: 0; left: 0;
+        height: 100%; width: 100%;
+        background: rgba(0, 0, 0, .5);
+        z-index: 1;
+}
+.background-video .container {
+        position: relative;
+        z-index: 2;
+}
+@media (pointer: coarse) and (hover: none) {
+        .background-video {
+                background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+                height: 400px;
+        }
+        .background-video video,
+        .background-video iframe {
+                display: none;
+        }
+}
+
+
+
+
+/********* CUSTOM STYLES ********* */
+
+/* Image tile hover */
+
+.img-wrapper {  
+  width: 100%;
+  height: auto;
+  overflow: hidden; 
+  margin-bottom: 1rem;
+}
+
+.content-tile img {
+  height: 100%;
+  transition: 0.3s;
+}
+
+.content-tile:hover img{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+
+/* Content Tile */
+
+.content-tile {
+        /*background-color: red;*/
+        border-bottom: 1px solid black;
+}
+
+.content-tile:hover {
+        /*background-color: red;*/
+        border-bottom: 1px solid #0312C5;
+        transition: border-bottom 0.3s ease-in-out;
+}
+
+
+.content-tile:hover {
+        color: #0312C5;
+        transition: color 0.3s ease-in-out;
+}
+
+
+.icon {
+    height: 1rem;
+    margin: 0rem 0 1.38rem;
+}
+
+
+#arrow img {
+  position: relative;
+  right: 0;
+  transition: right 0.3s ease-in-out;
+}
+#arrow:hover img {
+  right: -10px;
+}
+
+.bg-tile {
+    background-image: url("https://hunterand.co/wp-content/uploads/hunterand-projects-vodka-soda-packaging-animation.gif");
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+.carousel-inner {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.carousel-inner {
+  padding-top: 43.25%;
+  display: block;
+  content: "";
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: skyblue;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  width: 60%;
+  z-index: 9;
+  margin-top: 20px;
+  text-align: center;
+}
+.caption h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+.caption h2 {
+  color: rgba(255,255,255,.75);
+  font-size: 26px;
+  font-weight: 300;
+}
+a.big-button {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #eb7a00;
+  background: rgba(255, 0, 0, 0.75);
+  padding: 28px 35px;
+  border-radius: 3px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+a.big-button:hover {
+  text-decoration: none;
+  background: rgba(255, 0, 0, 0.9);
+}
+a.view-demo {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 35px;
+}
+a.view-demo:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.carousel-indicators .active {
+  background: black;
+}
+.carousel-indicators li {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  z-index: 15;
+  opacity: 1;
+}
+
+.carousel-indicators {
+  bottom: -45px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 20px;
+  align-items: flex-end;
+  bottom: -30px;
+  /*background-color: red;*/
+}
+
+.top-content .carousel-control-prev {
+    left: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #444;
+}
+ 
+.top-content .carousel-control-next {
+    right: -110px;
+    border-bottom: 0;
+    font-size: 40px;
+    color: #444;
+}
+
+
+
+
+/********elpatio***********/
+
+.elpat-button {
+
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  
+}
+
+.elpat-button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: center top;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  border-radius: 25px;
+}
+
+.elpat-button:hover {
+  cursor: pointer;
+}
+
+.elpat-button:hover::before {
+  transform-origin: center top;
+  transform: scaleY(1);
+}
+
+
+.primary {
+        background-color: #454445;
+}
+
+.primary::before {
+  background-color: #EB5930;
+}
+
+.signifier {
+        font-family: 'Signifier', sans-serif;
+}
+
+
+.underline {
+  position: relative;
+  font-weight: 700;
+}
+
+.underline::before {
+  ;
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #454445;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.underline:hover::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+
