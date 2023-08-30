@@ -1,15 +1,19 @@
-/*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
 
-/*@font-face {
-  font-family: "soehne-breit-test-extrafett";
-  src: url("../fonts/soehne-breit-test-extrafett.eot"),
-  url("../fonts/soehne-breit-test-extrafett.woff") format("woff"),
-  url("../fonts/soehne-breit-test-extrafett.otf") format("opentype");
-}*/
+
+@font-face {
+  font-family: "soehne-breit-web-extrafett";
+  src: url("../fontssoehne-breit-web-extrafett.eot"),
+  url("../fonts/soehne-breit-web-extrafett.woff") format("woff"),
+  url("../fonts/soehne-breit-web-extrafett.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Everett-Regular-web";
+  src: url("../Everett-Regular-web.eot"),
+  url("../fonts/Everett-Regular-web.woff") format("woff"),
+  url("../fonts/Everett-Regular-web.woff2") format("woff2");
+}
+
 
 html {
   font-size: 12px;
@@ -28,26 +32,28 @@ body {
   font-weight: 400;
   line-height: 1.25;
   color: black;
-  font-family: "Helvetica", Arial, sans-serif;
-  /*border: 1px solid black;*/
-  /*text-transform: uppercase;*/
+  font-family: "Everett-Regular-web", Arial, sans-serif;
 }
 
 
 h1, h2, h3, h4, h5 {
-  
   margin: 0em 0 0em 0;
-  line-height: 1.15;
-  font-weight: 600;
+  line-height: 0.8;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "soehne-breit-web-extrafett", Arial, sans-serif; 
 }
 
 /******************* Mobile *******************/
 
-h1 {font-size: 4rem;}
+.jumbo h1 {font-size: 3rem;
+            line-height: 0.8;}
+h1 {font-size: 3rem;}
 h2 {font-size: 1.6rem;}
 h3 {font-size: 1.4rem;}
-h4 {font-size: 1rem;}
-h5 {font-size: 1rem; line-height: 1.45;}
+h4 {font-size: 1.5rem; line-height: 0.7;}
+h5 {font-size: 1.5rem; line-height: 1.2;}
 h6 {font-size: 0.7rem;}
 p {font-size: 1.25rem; margin-bottom: 1.25em;}
 
@@ -64,7 +70,8 @@ p {font-size: 1.25rem; margin-bottom: 1.25em;}
 /******************* Desktop *******************/
 
 @media only screen and (min-width: 996px) {
-        h1 {font-size: 6rem; margin-top: 0;}
+        .jumbo h1 { line-height: 0.8;}
+        h1 {font-size: 5rem; margin-top: 0;}
         h2 {font-size: 2.4rem;}
         h3 {font-size: 2.0rem;}
         h4 {font-size: 1rem;}
@@ -94,7 +101,7 @@ h1 a:link, h1 a:visited, h1 a:active
 }
 
 
- td a:hover {
+ td a:hover, p a:hover {
   font-weight: 600;
 }
 
@@ -103,11 +110,22 @@ a:hover {
   text-decoration: none;
 }
 
-h4 a:hover, h5 a:hover, p a:hover {
+h4 a:hover, h5 a:hover {
   font-weight: 400;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 /******************* Color of text *******************/
+
+
+.hero-table-heading {
+  color: black;
+  -webkit-text-stroke: 0.8px white;
+}
+
 
 .white-text {
   color: white;
@@ -137,20 +155,74 @@ h4 a:hover, h5 a:hover, p a:hover {
 }
 
 
+.elpatio-text {
+  color: #306844;;
+  /*background-color: black;*/
+  border-color: #306844 !important;
+}
+
+.elpatio-text a, .tinkle-text h2 {
+  color: #306844;
+}
+
+
+.aurora-text {
+  color: #2f4f92;
+  /*background-color: black;*/
+  border-color: #2f4f92 !important;
+}
+
+.aurora-text a, .aurora-text h2 {
+  color: #2f4f92;
+}
+
 
 .black-text h2, .black-text  a {
   color: black;
 }
 
-.black-text  a:hover {
-  color: black;
-  /*-webkit-text-stroke: 1px black;*/
+
+.grey-text {
+  color: lightgray;
+  /*background-color: black;*/
+  border-color: lightgray !important;
+}
+.grey-text a, .grey-text h2{
+  color: lightgray;
 }
 
+/*.black-text  a:hover {
+  color: black;
+  -webkit-text-stroke: 1px black;
+}
+*/
 .hero-table  a:hover {
   color: black;
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 0.8px white;
 }
+
+.ct-text {
+  color: #e8e8ed;
+  /*background-color: black;*/
+  border-color: #e8e8ed !important;
+}
+
+.ct-text a, .ct-text h2 {
+  color: #e8e8ed;
+}
+
+
+.gsr-text {
+  color: #1c242c;
+  /*background-color: black;*/
+  border-color: #1c242c !important;
+}
+
+.gsr-text a, .gsr-text h2 {
+  color: #1c242c;
+}
+
+
 
 /******************* Color of Background *******************/
 
@@ -164,11 +236,11 @@ h4 a:hover, h5 a:hover, p a:hover {
 }
 
 .dimgray-bg {
-  background-color: dimgray;
+  background-color: #202020;
 }
 
 .lightgray-bg {
-  background-color: #dad9da;
+  background-color: #d8d8d8;
 }
 
 .stgeorges {
@@ -179,6 +251,24 @@ h4 a:hover, h5 a:hover, p a:hover {
   background-color: #f3fdf2;
 }
 
+.aurora {
+  background-color: #e5e5e5;
+}
+
+.ct-bg {
+  background-color: #ff4c03;
+}
+
+
+.elpatio-bg {
+  background-color: #EB5A31;
+}
+
+.nak-bg {
+  background-color: #091b0f;
+}
+
+
 /******************* Colors *******************/
 
 .gold {
@@ -188,19 +278,6 @@ h4 a:hover, h5 a:hover, p a:hover {
 .silver {
   color: silver;
 }
-
-/******************* Page Formating *******************/
-
-
-.blue{
-  /*background-color: blue;*/
-}
-
-.red{
-    /*background-color: red;*/
-}
-
-
 
 
 /******************* NAV *******************/
@@ -213,19 +290,13 @@ h4 a:hover, h5 a:hover, p a:hover {
   margin: 0;
 }
 
-.breadcrumb>.active {
-  font-weight: 400 !important;
-  opacity: 0.5;
-}
-
-.breadcrumb-item+.breadcrumb-item::before {
-    content: ":";
-}
-
-
 .foot {
   border-top: 1px solid;
+  padding: 0.3em 0 0.3em 0;
 }
+
+
+/******************* Homepage Hero *******************/
 
 
 .hero-table table, .hero-table th, .hero-table td {
@@ -233,15 +304,34 @@ h4 a:hover, h5 a:hover, p a:hover {
 	border: none;
 }
 
-.hero-links:hover {
-	font-family: "Times";
-	/*background-color: rgba(255, 0, 0, 0.4);*/
+  
+
+.hero-link h1 {
+  text-transform: uppercase;
 }
 
-.hero-links {
+.hero-link h1:hover {
+  /*font-family: "Everett-Regular-web" !important;*/
+  /*text-transform: capitalize;*/
+  text-transform: uppercase;
+}
+
+.btn-block {
+  /*background-color: red;*/
+}
+
+/*.hero-links:hover {
+	font-family: "Times" !important;
+  font-weight: 600;
+	text-transform: capitalize;
+}*/
+
+/*.hero-links {
+  font-family: "soehne-breit-web-extrafett";
 	height: auto;
 	width: 100%;
-}
+  text-transform: uppercase;
+}*/
 
 .awards-link:hover span {
   display:none
@@ -250,11 +340,11 @@ h4 a:hover, h5 a:hover, p a:hover {
 .awards-link:hover:before {
   content:"Awards";
   background-color: none;
-
 }
 
 .awards-link:hover {
-  font-family: "Times";
+  font-family: "Everett-Regular-web" !important;
+  /*font-weight: 600;*/
   text-transform: capitalize;
 }
 
@@ -265,13 +355,32 @@ h4 a:hover, h5 a:hover, p a:hover {
 
 .contact-link:hover:before {
   content:"Contact";
-  padding-bottom: 0.15rem;
+  /*padding-bottom: 0.15rem;*/
   background-color: none;
 }
 
 .contact-link:hover {
-  font-family: "Times";
+  font-family: "Everett-Regular-web" !important;
   text-transform: capitalize;
+  /*font-weight: 600;*/
+}
+
+
+.bio-link:hover span {
+  display:none
+}
+
+.bio-link:hover:before {
+  content:"Bio";
+  /*padding-bottom: 0.15rem;*/
+  background-color: none;
+}
+
+.bio-link:hover {
+  font-family: "Everett-Regular-web" !important;
+  text-transform: capitalize;
+  /*font-weight: 600;*/
+
 }
 
 .about-link:hover span {
@@ -280,24 +389,21 @@ h4 a:hover, h5 a:hover, p a:hover {
 
 .about-link:hover:before {
   content:"About this project";
-  padding-bottom: 0.15rem;
+  /*padding-bottom: 0.15rem;*/
   background-color: none;
 }
 
 .about-link:hover {
-  font-family: "Times";
+  font-family: "Everett-Regular-web" !important;
+  /*font-weight: 600;*/
   text-transform: capitalize;
 }
 
 
 .back-button:hover span {
-  display:none
+  font-weight: 400;
 }
 
-.back-button:hover:before {
-  content:"Back to projects";
-  background-color: none;
-}
 
 
 
@@ -348,12 +454,12 @@ padding: 0;
 
 .menu {
     margin-top: 3em;
-    margin-bottom: 1em;
+    margin-bottom: 1.7em;
 }
 
 @media only screen and (max-width: 575px) {
         .red {margin-top: 3em;}
-        .menu { margin-top: 0em; margin-bottom: 1em;}
+        .menu { margin-top: 0em; margin-bottom: 1.5em;}
         /*.blue {position: relative;}*/
 }
 
@@ -388,13 +494,15 @@ th, td {
     }
 
 .frame-desktop {
-  width: 100%;
+    width: 100%;
     border: solid 20px;
     border-radius: 20px;
+    line-height: 0 !important;
   }
 
 .frame-video {
   width: 100%;
+  line-height: 0 !important;
   }
 
 .posters {
@@ -404,11 +512,20 @@ th, td {
 box-shadow: 5px 5px 29px -1px rgba(0,0,0,0.15);
 }
 
+.website-flow-on {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 .center {
   display: inherit;
   margin-left: auto;
   margin-right: auto;
+}
+
+.lg-space-top, .lg-space-btm, .sm-space-top, .sm-space-btm
+{
+  line-height: 0;
 }
 
 .lg-space-top {
@@ -426,3 +543,7 @@ box-shadow: 5px 5px 29px -1px rgba(0,0,0,0.15);
 .sm-space-btm {
   padding-bottom: 5%;
 }
+
+}
+
+

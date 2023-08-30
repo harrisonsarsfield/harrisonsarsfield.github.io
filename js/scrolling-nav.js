@@ -26,4 +26,12 @@
     offset: 56
   });
 
+  console.log('fuck that works');
+
 })(jQuery); // End of use strict
+
+
+
+// lazyload
+
+
