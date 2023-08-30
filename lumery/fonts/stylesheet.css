@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'MD Nichrome';
+    src: url('MDNichrome-Bold.woff2') format('woff2'),
+        url('MDNichrome-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metric';
+    src: url('Metric-Bold.woff2') format('woff2'),
+        url('Metric-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metric';
+    src: url('Metric-Regular.woff2') format('woff2'),
+        url('Metric-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Signifier';
+    src: url('Signifier-BoldItalic.woff2') format('woff2'),
+        url('Signifier-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
