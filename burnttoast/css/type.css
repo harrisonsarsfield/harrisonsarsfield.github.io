@@ -1,0 +1,301 @@
+
+/*Futura PT Cond Bold
+font-family: "futura-pt-condensed", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Futura PT Cond Bold Oblique
+font-family: "futura-pt-condensed", sans-serif;
+font-weight: 700;
+font-style: italic;*/
+
+/*Futura PT Medium
+font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Futura PT Medium Oblique
+font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: italic;
+
+Futura PT Bold
+font-family: "futura-pt-bold", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Futura PT Bold Oblique
+font-family: "futura-pt-bold", sans-serif;
+font-weight: 700;
+font-style: italic;*/
+
+/*font-family: "futura-pt-condensed", sans-serif;
+font-weight: 800;
+font-style: normal;*/
+
+/*Futura PT Book
+font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: normal;
+Futura PT Book Oblique
+font-family: "futura-pt", sans-serif;
+font-weight: 400;
+font-style: italic;
+Futura PT Heavy
+font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+Futura PT Heavy Oblique
+font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: italic;
+Futura PT Bold
+font-family: "futura-pt-bold", sans-serif;
+font-weight: 700;
+font-style: normal;
+Futura PT Bold Oblique
+font-family: "futura-pt-bold", sans-serif;
+font-weight: 700;
+font-style: italic;*/
+
+
+/*********************** type scales made using https://type-scale.com/ **************************/
+
+
+/* setting the base size */
+
+html {
+  font-size: 11px;
+}
+
+@media only screen and (min-width: 996px) {
+        html {font-size: 14px;}
+}
+@media only screen and (min-width: 1200px) {
+        html {font-size: 16px;}
+}
+
+
+/* type styles */
+
+body {
+  background-color: white;
+  font-family: "futura-pt", sans-serif; 
+  font-weight: 500;
+  line-height: 1.45;
+  
+}
+
+p {
+  margin-bottom: 1.25em;
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin: 1rem 0 2.75rem 0; /* this has been altered from the original */
+  line-height: 0.8;
+  font-weight: 800;
+}
+
+h1, h2, h3, h4 {
+  font-family: "futura-pt-condensed", sans-serif;
+}
+
+h5, h6 {
+  font-family: "futura-pt-bold", sans-serif;
+}
+
+.jumbo {
+  margin-top: 0;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 996px) {
+        .jumbo {font-size: 11rem; margin-top: 0;}
+}
+
+
+@media only screen and (min-width: 768px) {
+        .jumbo {font-size: 11rem; margin-top: 0;}
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+h2 {font-size: 3.157em;}
+
+h3 {font-size: 2.369em;}
+
+h4 {font-size: 1.777em;}
+
+h5 {font-size: 1.333em;}
+
+.intro { 
+/*  line-height: 1.3;*/
+/*  font-weight: 800;*/
+  font-size: 1.2rem;
+/*  margin-bottom: 3rem;*/
+}
+
+.bold {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+
+small, .text_small {font-size: 0.75em;}
+
+
+/* this keeps the paragraphs a nce width */
+@media only screen and (min-width: 1200px) {
+  .content-block {
+    max-width: 39.5vw;
+  }
+}
+
+
+
+
+/*********************** Links **************************/
+
+
+.nav-link {
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #231f20;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #231f20;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.underline:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+a:hover {
+    color: #231f20;
+}
+
+a {
+    color: #231f20;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.btn {
+  border-radius: 5rem;
+  background-color: #231f20;
+  color: white;
+}
+
+button {
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+/*  padding: 0.5em 1em;*/
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+/*  animation: jelly 0.5s;*/
+}
+
+.button-text {
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+/*  color: #231f20;*/
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+.btn:hover {
+    color: #212529 !important;
+    text-decoration: none;
+    background: white;
+    outline: #231f20 1px solid;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn.focus, .btn:focus {
+    color: #231f20;
+    outline: none;
+    background-color: #9b9131;
+    box-shadow: none;
+}
+
+.no-margin {
+    margin: 1rem; /* this has been altered from the original */
+}
+
+
+.inline-link {
+  position: relative;
+}
+
+.inline-link::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3cefff;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.inline-link:hover::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+
+
