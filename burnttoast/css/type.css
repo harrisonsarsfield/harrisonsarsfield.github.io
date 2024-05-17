@@ -124,6 +124,19 @@ h5, h6 {
         .jumbo {font-size: 11rem; margin-top: 0;}
 }
 
+
+@media only screen and (max-width: 991px) {
+        .nav-item {
+          font-size: 2rem;
+          margin-top: 0;
+          text-align: right;
+          border-bottom: 1px solid #231f20;
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
+        }
+
+}
+
 h1 {
   margin-top: 0;
   font-size: 4.209em;
@@ -167,15 +180,25 @@ small, .text_small {font-size: 0.75em;}
 /*********************** Links **************************/
 
 
-.nav-link {
-  font-family: "futura-pt-bold", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.5px;
-  color: #231f20;
+@media only screen and (max-width: 991px) {
+        .nav-item {
+          font-size: 2rem;
+          margin-top: 0;
+          text-align: right;
+          border-bottom: 1px solid #231f20;
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
+        }
+
+        .underline:hover {
+          color: #9b9131;
+        }
+
 }
 
-.underline {
+
+@media only screen and (min-width: 991px) {
+        .underline {
   position: relative;
 }
 
@@ -195,7 +218,20 @@ small, .text_small {font-size: 0.75em;}
 .underline:hover::before {
   transform-origin: bottom left;
   transform: scaleX(1);
+        }
+
 }
+
+.nav-link {
+  font-family: "futura-pt-bold", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #231f20;
+}
+
+
+
 
 a:hover {
     color: #231f20;
