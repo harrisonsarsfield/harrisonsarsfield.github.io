@@ -4,6 +4,10 @@
 /******************* setting up the spacing system used throughout *******************/
 
 
+html {
+scroll-behavior: smooth;
+}
+
 .container-wrapper {
         padding: 1rem;
 }
