@@ -234,7 +234,7 @@ small, .text_small {font-size: 0.75em;}
 
 
 a:hover {
-    color: #231f20;
+    color: #9b9131;
 }
 
 a {
@@ -243,6 +243,15 @@ a {
     background-color: transparent;
 }
 
+.white-link a:hover {
+    color: #9b9131;
+}
+
+.white-link a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
 
 .btn {
   border-radius: 5rem;

@@ -392,6 +392,9 @@ body .delimiter {
         height: 100px;
 }
 
+.frame-icons {
+        height: 200px;
+}
 
 .card {
     background-color: transparent;
