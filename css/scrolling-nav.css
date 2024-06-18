@@ -223,6 +223,30 @@ h4 a:hover, h5 a:hover {
 }
 
 
+.nicerice-text {
+  color: #00aeef;
+  /*background-color: black;*/
+  border-color: #00aeef !important;
+  border-color: #00aeef !important;
+}
+
+.nicerice-text a, .nicerice-text h2 {
+  color: #00aeef;
+}
+
+.nofuss-text {
+  color: #d74d4b;
+  /*background-color: black;*/
+  border-color: #d74d4b !important;
+  border-color: #d74d4b !important;
+}
+
+.nofuss-text a, .nofuss-text h2 {
+  color: #d74d4b;
+}
+
+
+
 
 /******************* Color of Background *******************/
 
@@ -267,6 +291,15 @@ h4 a:hover, h5 a:hover {
 .nak-bg {
   background-color: #091b0f;
 }
+
+.nicerice-bg {
+  background-color: #011566;
+}
+
+.nofuss-bg {
+  background-color: #d74d4b;
+}
+
 
 
 /******************* Colors *******************/
