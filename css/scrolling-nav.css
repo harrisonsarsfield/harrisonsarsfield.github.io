@@ -509,6 +509,11 @@ th, td {
   vertical-align: top;
 }
 
+.text-right {
+    text-align: right !important;
+     width: 80%; 
+}
+
 .medal {
 	padding-right: 1em;
 }
