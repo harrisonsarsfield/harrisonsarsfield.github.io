@@ -156,13 +156,13 @@ h4 a:hover, h5 a:hover {
 
 
 .elpatio-text {
-  color: #306844;;
+  color: #434343;
   /*background-color: black;*/
-  border-color: #306844 !important;
+  border-color: #434343 !important;
 }
 
-.elpatio-text a, .tinkle-text h2 {
-  color: #306844;
+.elpatio-text a, .elpatio-text h2 {
+  color: #434343;
 }
 
 
@@ -180,6 +180,24 @@ h4 a:hover, h5 a:hover {
 .black-text h2, .black-text  a {
   color: black;
 }
+
+
+
+.cp-text {
+  color: #5cc0aa;
+  /*background-color: black;*/
+  border-color: #5cc0aa !important;
+}
+
+.cp-text a, .cp-text h2 {
+  color: #5cc0aa;
+}
+
+
+
+
+
+
 
 
 .grey-text {
@@ -280,7 +298,7 @@ h4 a:hover, h5 a:hover {
 }
 
 .ct-bg {
-  background-color: #ff4c03;
+  background-color: #100f52;
 }
 
 
